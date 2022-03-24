@@ -25,11 +25,11 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/announcement', (req, res) => {
-  res.render('announcementPage');
+  res.render('announcementPage.ejs');
 })
 
-app.get('introduction', (req, res) => {
-  res.render('introductionPage')
+app.get('/introduction', (req, res) => {
+  res.render('introductionPage.ejs')
 })
 
 app.listen(port, () => {
