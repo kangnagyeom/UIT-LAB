@@ -5,36 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b619a30116.js" crossorigin="anonymous"></script>
     <title>Second Page</title>
 
+    <script>
+        $(function () {
+            $('#hide').click(function() {
+                alert("HelloWorld")
+            });
+        });
+    </script>
+
     <style>
-        .system{
-            position: absolute;
+        .logo_text {
+            position: relative;
+            left: 90px;
+            margin-right: 90%;
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #5B5150;
+            color:antiquewhite;
+            size: 100px;
+            font-weight: 600;
         }
+
+        p > button {
+            background-color:transparent;
+            border: 0;
+            outline: 0;
+        }
+
+        .app_image{
+            position: absolute;
+            top: 300px;
+            left: 350px;
+            width: 250px;
+            height: 250px;
+            line-height: 250px;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            background-color:#e2b091;
+        }
+        .app_image  p {
+            line-height: 1.5;
+            vertical-align: middle;
+        }
+
+        .web_image{
+            position: absolute;
+            top: 300px;
+            left:750px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        .web_image > div{
+            position: absolute;
+            top: 500px;
+            left:750px;
+        }
+
+        .server_image{
+            position: absolute;
+            top: 300px;
+            left:1200px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #eabcac
+        }
+
     </style>
 
 </head>
 <body>
-    <a href="/first">First Page</a>
-
-    <div class="system">
-        <ul>
-         <li>UIT-LAB</li>
-         <ul>
-           <li>APP</li>
-               <ul>
-                  <li>고준혁</li>
-               </ul>
-           <li>WEB</li>
-               <ul>
-                  <li>백찬영</li>
-                  <li>홍우성</li>
-               </ul>
-           <li>SERVER</li>
-               <ul>
-                  <li>이지원</li>
-                  <li>오동협</li>
-            </ul>
+    <a href="/first" class="logo_text" style="text-decoration: none;">UIT-LAB</a>
+    <div></div>
+    <button id="hide">숨기기</button>
+    <div id="noneDiv" >123123123</div><div>
+        <p class="app_image">
+            <button style="color:#5B5150"><i class="fa-solid fa-mobile-screen-button fa-10x"></i></button>
+        </p>
+        <p class="web_image">
+            <button  style="color:#5B5150"><i class="fa-solid fa-window-restore fa-10x"></i></button>
+        </p>
+        <p class="server_image">
+            <button  style="color:#5B5150"><i class="fa-solid fa-desktop fa-10x"></i></button>
+        </p>
     </div>
+    
+
+    <img src="children-gf09556ef9_1920.jpg" alt="My Image">
+
 </body>
+
 </html>

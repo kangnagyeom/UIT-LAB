@@ -29,8 +29,12 @@ app.get('/announcement', (req, res) => {
 })
 
 app.get('/introduction', (req, res) => {
-  res.render('introductionPage.ejs')
+  res.render('introductionPage.ejs');
 })
+
+app.get('/signup', (req, res) => {
+  res.render('SignUpPage.ejs');
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
